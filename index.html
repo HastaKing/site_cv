@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-	<meta charset="utf-8">
+		<meta charset="utf-8">
 
-	<title>CV | Jonas Bouscharain</title>
+		<title>CV | Jonas Bouscharain</title>
 
-	<!-- Behavioral Meta Data -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!-- Behavioral Meta Data -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="css/my_style.css"/>
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="css/my_style.css"/>
 
-</head>
-<body>
+		<!-- Scripts -->
+		<script src="js/jquery.js"></script>
+		<script src="js/parallax.js"></script>
+		<script src="js/my_script.js"></script>
+		<script src="js/jquery.parallax.min.js"></script>
 
-	<div id="header" class="container">
-		<ul id="scene" class="scene">
-			<li class="layer" width="100%" data-depth="1.00"><img src="images/img_1.png"></li>
-			<li class="layer" data-depth="0.80"><img src="images/img_2.png"></li>
-			<li class="layer" data-depth="0.60"><img src="images/img_3.png"></li>
-			<li class="layer" data-depth="0.40"><img src="images/img_4.png"></li>
-			<li class="layer" data-depth="0.20"><img src="images/img_5.png"></li>
-			<li class="layer" data-depth="0.00"><img src="images/tete.png"></li>
-		</ul>
-	</div>
 
-	<div id="content">
-	</div>
+	</head>
+	<body>
 
-	<div id="footer">
-	</div>
+		<div id="header" class="container">
+			<ul id="scene" class="scene">
+				<li class="layer" data-depth="1.00"><img class="img_layer" src="images/img_1.png"></li>
+				<li class="layer" data-depth="0.80"><img class="img_layer" src="images/img_2.png"></li>
+				<li class="layer" data-depth="0.60"><img class="img_layer" src="images/img_3.png"></li>
+				<li class="layer" data-depth="0.50"><img class="img_tete" src="images/tete.png"></li>
+				<li class="layer" data-depth="0.40"><img class="img_layer" src="images/img_4.png"></li>
+				<li class="layer" data-depth="0.20"><img class="img_layer" src="images/img_5.png"></li>
+				
+			</ul>
+		</div>
 
-	<!-- Scripts -->
-	<script src="js/parallax.js"></script>
-	<script>
+		<div id="content">
+		</div>
 
-	// Pretty simple huh?
-	var scene = document.getElementById('scene');
-	var parallax = new Parallax(scene);
-
-	</script>
-
-</body>
+		<div id="footer">
+		</div>
+	</body>
 </html>
